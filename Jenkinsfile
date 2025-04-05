@@ -1,7 +1,7 @@
 /* groovylint-disable-next-line CompileStatic */
 pipeline {
     tools {
-        node 'nodejs-7.8.0'
+        nodejs 'nodejs-7.8.0'
     }
     stages {
         stage('build') {
