@@ -1,5 +1,6 @@
 /* groovylint-disable-next-line CompileStatic */
 pipeline {
+    agent any
     tools {
         nodejs 'nodejs-7.8.0'
     }
