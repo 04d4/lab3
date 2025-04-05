@@ -1,18 +1,20 @@
+/* groovylint-disable-next-line CompileStatic */
 pipeline {
     tools {
         node 'nodjs-7.8.0'
     }
     stages {
         stage('build') {
-      steps {
-        sh 'npm install'
-      }
+            steps {
+                echo 'Building...'
+                sh 'npm install'
+            }
         }
-
         stage('test') {
-      steps {
-        sh 'npm test'
-      }
+            steps {
+                echo 'Testing...'
+                sh 'npm test'
+            }
         }
     }
 }
